@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #f4f4f4;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ed1b24;
+}
+
+.grad {
+    color: transparent;
+    background: linear-gradient(to right, #ed1b24, #f15a23, #f9931a);
+    background-clip: text;
+    width: fit-content;
+}
+
+.landing {
+    margin: 0 auto;
+    background-image: url(./images/home.png);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.landing h1 {
+    font-size: 12rem;
+    /* color: #840dbb; */
+    color: transparent;
+    font-weight: 700;
+    text-align: center;
+    /* background: linear-gradient(to right, #9f04e7, #064b8b, #ffad06); */
+    background: linear-gradient(to right, #ed1b24, #f15a23, #f9931a);
+    background-clip: text;
+    width: fit-content;
+    font-family: 'Anta', sans-serif;
+    animation: gradient infinite 2.5s;
+}
+
+@keyframes gradient {
+    0% {
+        color: #f9931a;
+    }
+
+    33.33% {
+        color: #ed1b24;
+    }
+
+    66.66% {
+        color: #f15a23;
+    }
+
+    100% {
+        color: #f9931a;
+    }
+}
+
+.landing h3 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-top: 1rem;
+}
+
+.landing p {
+    font-size: 1.8rem;
+    color: #000;
+    margin: 1rem auto;
+    width: 60%;
+}
+
+.landing button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, #ed1b24, #f15a23, #f9931a);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.landing button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
