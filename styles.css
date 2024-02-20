@@ -77,10 +77,10 @@ nav {
     background-clip: text;
     width: fit-content;
     font-family: 'Anta', sans-serif;
-    animation: gradient infinite 2.5s;
+    animation: gradientclr infinite 2.5s;
 }
 
-@keyframes gradient {
+@keyframes gradientclr {
     0% {
         color: #f9931a;
     }
@@ -108,18 +108,37 @@ nav {
     font-size: 1.8rem;
     color: #000;
     margin: 1rem auto;
-    width: 60%;
+    width: 40%;
 }
 
 .landing button {
     padding: 1rem 2rem;
     font-size: 1.5rem;
-    background-image: linear-gradient(to right, #ed1b24, #f15a23, #f9931a);
+    /* background-image: linear-gradient(to right, #ed1b24, #f15a23, #f9931a); */
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    animation: gradientbg infinite 2.5s;
+}
+
+@keyframes gradientbg {
+    0% {
+        background-color: #f9931a;
+    }
+
+    33.33% {
+        background-color: #ed1b24;
+    }
+
+    66.66% {
+        background-color: #f15a23;
+    }
+
+    100% {
+        background-color: #f9931a;
+    }
 }
 
 .landing button:hover {
