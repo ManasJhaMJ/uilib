@@ -198,14 +198,19 @@ nav {
 }
 
 .components div {
-    width: 40%;
+    width: 35%;
     height: 100%;
     text-align: center;
+    padding: 2rem;
     margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
 }
 
 .components img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
